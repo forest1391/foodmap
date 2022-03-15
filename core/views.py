@@ -5,5 +5,14 @@ def index(request):
     return render(request, 'index.html')
 
 
-def city(request):
-    return render(request, 'city.html')
+def about(request):
+    return render(request, 'about.html')
+
+def coming(request):
+    return render(request, 'coming.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def single(request):
+    return render(request, 'single.html')
