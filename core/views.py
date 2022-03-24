@@ -25,3 +25,6 @@ def community(request):
 
 def communitypage(request):
     return render(request, 'communitypage.html')
+
+def communitypage2(request):
+    return render(request, 'communitypage2.html')
