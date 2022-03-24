@@ -19,3 +19,6 @@ def single(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def community(request):
+    return render(request, 'community.html')
