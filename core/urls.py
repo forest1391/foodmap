@@ -22,7 +22,7 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', views.index),
     path('index.html', views.index),
-    path('about.html', views.about),
+    path('analyze.html', views.analyze),
     path('coming.html', views.coming),
     path('contact.html', views.contact),
     path('single.html', views.single),
