@@ -22,3 +22,6 @@ def login(request):
 
 def community(request):
     return render(request, 'community.html')
+
+def communitypage(request):
+    return render(request, 'communitypage.html')

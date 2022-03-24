@@ -27,5 +27,6 @@ urlpatterns = [
     path('contact.html', views.contact),
     path('single.html', views.single),
     path('community.html', views.community),
-    path('login.html', views.login)
+    path('login.html', views.login),
+    path('communitypage.html', views.communitypage)
 ]
