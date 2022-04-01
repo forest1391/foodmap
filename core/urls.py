@@ -21,14 +21,14 @@ from . import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', views.index),
-    path('index.html', views.index),
-    path('analyze.html', views.analyze),
-    path('coming.html', views.coming),
-    path('contact.html', views.contact),
-    path('single.html', views.single),
-    path('community.html', views.community),
+    path('index/', views.index),
+    path('analyze/', views.analyze),
+    path('coming/', views.coming),
+    path('contact/', views.contact),
+    path('single/', views.single),
+    path('community/', views.community),
     path('login.html', views.login),
-    path('communitypage.html', views.communitypage),
-    path('communitypage2.html', views.communitypage2),
-    path('Userintroduction.html', views.Userintroduction)
+    path('communitypage/', views.communitypage),
+    path('communitypage2/', views.communitypage2),
+    path('Userintroduction/', views.Userintroduction)
 ]
