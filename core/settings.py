@@ -27,6 +27,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['app-karenforest.herokuapp.com']
 
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -77,10 +80,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+'default': dj_database_url.parse('postgres://hwiwylqsylpbhz:d0342addb9c702380c94d61cc4fa4883d682437f53ee8e8a05a0cc85c2d49fa4@ec2-3-219-63-251.compute-1.amazonaws.com:5432/d5kql1ob5u61cu')
 }
 
 
@@ -131,3 +131,5 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+API_URL = 'http://localhost:8001/'

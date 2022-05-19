@@ -1,5 +1,8 @@
+import requests
 from django.shortcuts import render
+from core.settings import API_URL as root
 
+root += 'menu'
 
 def index(request):
     return render(request, 'index.html')
@@ -36,7 +39,10 @@ def consult(request):
     return render(request, 'consult.html')
 
 def menu(request):
-    return render(request, 'menu.html')
+    r = requests.get(f'{root}/all/')
+    result = r.json()
+    menus = result['data']
+    return render(request, 'menu.html', {'menus': menus})
 
 def information(request):
     return render(request, 'information.html')
