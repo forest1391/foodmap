@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$^cj&s%f6ehv=aa44rh1l*j-_2ke%%y_#m3=)$e-09e^bggjxv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ['app-karenforest.herokuapp.com']
+
+# ALLOWED_HOSTS = ['app-karenforest.herokuapp.com']
 
 DEBUG = True
 
@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-'default': dj_database_url.parse('postgres://hwiwylqsylpbhz:d0342addb9c702380c94d61cc4fa4883d682437f53ee8e8a05a0cc85c2d49fa4@ec2-3-219-63-251.compute-1.amazonaws.com:5432/d5kql1ob5u61cu')
-}
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://hwiwylqsylpbhz:d0342addb9c702380c94d61cc4fa4883d682437f53ee8e8a05a0cc85c2d49fa4@ec2-3-219-63-251.compute-1.amazonaws.com:5432/d5kql1ob5u61cu')
+# }
 
 
 # Password validation
@@ -132,4 +132,4 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-API_URL = 'http://localhost:8001/'
+API_URL = 'http://localhost:8001/api/'

@@ -2,11 +2,10 @@ import requests
 from django.shortcuts import render
 from core.settings import API_URL as root
 
-root += 'menu'
+root += 'menu_review'
 
 def index(request):
     return render(request, 'index.html')
-
 
 def analyze(request):
     return render(request, 'analyze.html')
